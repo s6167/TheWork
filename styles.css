@@ -205,6 +205,12 @@ h4{
     body{
         width: 100% !important;
     }
+    /* --------------Comon Classes------- */
+    img{
+        width: 60px;
+        min-width: 40px;
+    }
+
     /* -------profile---------- */
     .profile{
         flex-direction: column;
