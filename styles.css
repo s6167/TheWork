@@ -211,6 +211,8 @@ h4{
         /* border: none; */
         flex-direction: column;
         border-bottom: 3px solid black;
+        width: 100%;
+        text-align: center;
     }
     .name{
         width: 100%;
@@ -243,6 +245,8 @@ h4{
     .skillandaward{
         flex-direction: column;
         border: none;
+        width: 100%;
+        border-bottom: 3px solid black;
     }
     .skills{
         width: 100%;
@@ -250,7 +254,7 @@ h4{
     }
     .awards{
         width: 100%;
-        border-bottom: 3px solid black;
+        
     }
     /* --------Interests----- */
     .interests{
