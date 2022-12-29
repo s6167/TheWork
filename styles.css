@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 80% !important;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
+}
+.docs{
+    border: 1px solid blueviolet;
+    background-color: rgb(246, 166, 166);
+    
+}
+
+/* -----------Profile Classes----------------------------- */
+.profile-icon{
+    text-align: center;
+}
+
+
+.profile{
+    display: flex;
+    width: 90%;
+    height: 200px;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start ;
+    align-items: center;
+    margin: auto;
+    /* padding: 20px; */
+    /* border: 1px solid red; */
+
+}
+.profile-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 80%;
+    margin: 0;
+    /* padding: 15px; */
+    border-bottom: 3px solid black ;
+}
+.name{
+   width: 50%;
+    /* border: 1px solid green; */
+    font-size: 1rem;
+    padding: 20px;
+}
+.intro{
+    width: 50%;
+    /* border: 1px solid brown; */
+    border-left: 3px solid black;
+    /* font-size: 2rem; */
+    padding: 20px;
+}
+p{
+    margin: 0;
+    padding: 3px;
+}
+.text-deco{
+    text-decoration: none
+}
+
+/* ----------------------------Common Classes---------------------------------------------- */
+img{
+    /* width: 150px; */
+    height: auto;
+    /* border: 1px solid blue; */
+    width: 100px;
+    min-width: 80px;  
+}
+.margin-0{
+    margin: 0;
+}
+.padding-0{
+    padding: 0;
+}
+.width-30{
+    width: 30%;
+    
+}
+.width-70{
+    width: 70%;
+}
+h4{
+    margin: 0;
+    
+}
+/* ---------------------------Work Section-------------------------------------------- */
+
+.work{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.work-intro{
+    margin: auto;
+    width: 80%;
+    /* border: 1px solid blue; */
+}
+.text-bold{
+    font-weight: bold;
+}
+.work table{
+    width: 80%;
+    margin: auto;
+    border-spacing: 0 15px ;
+}
+.work-icon{
+    text-align: center;
+}
+
+
+
+/* --------------------------Skills and rewards--------------------------------------- */
+
+.skills-awards{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.skills-icon{
+    text-align: center;
+}
+.skills{
+    width: 50%;
+    /* border: 1px solid red; */
+    padding: 20px;
+    border-right: 3px solid black;
+}
+.skills td{
+    padding-left: 20px;
+}
+.awards{
+    width: 50%;
+    /* border: 1px solid rebeccapurple; */
+    padding: 20px;
+}
+
+.skillandaward{
+    display: flex;
+    width: 80%;
+    /* border: 1px solid lightcoral; */
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+/* -------------------Interests Classes--------------------------------- */
+
+.interests{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.interest-icon{
+    text-align: center;
+}
+.interests-all{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+.interests-all img{
+    width: 50px;
+}
+
+/* --------------------------------Education------------------------------------------------ */
+.education{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+.college{
+    width: 80%;
+    /* border: 1px solid red; */
+    /* margin: auto; */
+    border-bottom: 3px solid black;
+    /* margin-bottom: 50px; */
+}
+.college table{
+    width: 80%;
+    margin: auto;
+    border-spacing: 0 15px ;
+}
+
+
+/* -------------------- RESPONSIVE------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    /* -------profile---------- */
+    .profile{
+        flex-direction: column;
+    }
+    .profile-data{
+        /* border: none; */
+        flex-direction: column;
+        border-bottom: 3px solid black;
+    }
+    .name{
+        width: 100%;
+    }
+    .intro{
+        border: none;
+        width: 100%;
+        border: none;
+        
+    }
+    /* ----------Work-------------- */
+    .work{
+        flex-direction: column;
+        
+    }
+    .work-intro{
+        width: 100%;
+        border-bottom: 3px solid black;
+    }
+    .test{
+        width: 100%;
+        height: 280px;
+        /* background-color: aqua; */
+    }
+    /* --------Skills---------- */
+    .skills-awards{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .skillandaward{
+        flex-direction: column;
+        border: none;
+    }
+    .skills{
+        width: 100%;
+        border: none;
+    }
+    .awards{
+        width: 100%;
+        border-bottom: 3px solid black;
+    }
+    /* --------Interests----- */
+    .interests{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .interests-all{
+        width: 100%;
+    }
+    /* ------Education-------------- */
+    .education{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .college{
+        width: 100%;
+    }
+}
